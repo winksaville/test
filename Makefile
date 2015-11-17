@@ -1,5 +1,5 @@
-bin/helloworld : helloworld.cpp
+helloworld : helloworld.cpp
 	gcc $< -o $@
 
 clean :
-	rm bin/helloworld
+	rm helloworld

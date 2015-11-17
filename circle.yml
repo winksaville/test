@@ -1,0 +1,11 @@
+machine:
+  timezone:
+    America/Los_Angeles
+
+dependencies:
+  pre:
+    - make
+  
+test:
+  post:
+    - ./helloworld 
