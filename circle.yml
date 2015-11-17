@@ -4,8 +4,13 @@ machine:
 
 dependencies:
   pre:
-    - make
-  
+    - sudo apt-get update; \
+      sudo apt-get install gcc-5 \
+      sudo apt-get install g++-5
+
 test:
+  pre:
+    - make
+
   post:
     - ./helloworld 
